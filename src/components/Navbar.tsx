@@ -3,7 +3,7 @@ import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-  const [active, setActive] = useState("home"); // ← section yang aktif
+  const [active, setActive] = useState("home");
 
   const menuItems = [
     { label: "Beranda", link: "#home", id: "home" },
@@ -30,7 +30,7 @@ export default function Navbar() {
 
     sections.forEach(sec => sec && observer.observe(sec));
     return () => sections.forEach(sec => sec && observer.unobserve(sec));
-  }, []);
+  });
 
   return (
     <nav className="fixed w-full bg-[#FAF7F2]/70 backdrop-blur-xl shadow-sm z-50 border-b border-[#e7e0d7]">
