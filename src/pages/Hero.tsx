@@ -6,7 +6,7 @@ export default function Hero() {
       id="home"
       className="flex items-center h-screen px-6 bg-gray-200"
     >
-      <div className="grid items-center max-w-6xl gap-10 mx-auto md:grid-cols-2">
+      <div className="grid items-center max-w-6xl mx-auto gap-30 md:grid-cols-2">
 
         {/* TEXT LEFT */}
         <motion.div
